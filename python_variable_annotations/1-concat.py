@@ -1,18 +1,11 @@
 #!/usr/bin/env python3
-
-"""
-This module provides a function to concatenate two strings.
-"""
-
-def concat(string1: string, string2: string) -> string:
+def concat(string1: str, string2: str) -> str:
     """
-    This function takes two strings and returns their concatenation.
-
+    This function takes two strings,and returns their concatenation.
     Args:
-        string1 (string): The first string.
-        string2 (string): The second string.
-
+    - str1 (str): The first string.
+    - str2 (str): The second string.
     Returns:
-        string: The concatenated result of string1 and string2.
+    - str: The concatenated result of str1 and str2.
     """
     return string1 + string2
