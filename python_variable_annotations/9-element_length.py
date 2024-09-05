@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 """
-This module provides a function that takes an iterable of sequences and returns a list of tuples. Each tuple contains a sequence and its 
-corresponding length.
+iterable of sequences and returns a list of tuples. 
 
-The function is useful for processing collections of sequences, such as lists of strings or lists of lists, where determining the length of each sequence is necessary.
+The function is useful for processing collections of sequences,
 """
 
 from typing import Iterable, Sequence, List, Tuple
@@ -11,8 +10,7 @@ from typing import Iterable, Sequence, List, Tuple
 
 def element_length(lst: Iterable[Sequence]) -> List[Tuple[Sequence, int]]:
     """
-    Returns a list of tuples, where each tuple contains an element from the iterable
-    and its corresponding length.
+    Returns a list of tuples,
     Args:
         lst (Iterable[Sequence]):  
     Returns:
