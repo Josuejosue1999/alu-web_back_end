@@ -1,10 +1,16 @@
 #!/usr/bin/env python3
+"""
+This module contains a function `add` that
+calculates the sum of two floating-point numbers.
+"""
+
+
 def add(a: float, b: float) -> float:
     """
-    sum of two floating numbers a and b.
+    Calculates the sum of two floating-point numbers a and b.
     Args:
-        a (float): The first floating-point number.
-        b (float): The second floating-point number.
+        a (float):
+        b (float):
     Returns:
         float: The sum of the two floating-point numbers.
     """
