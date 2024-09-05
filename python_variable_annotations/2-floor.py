@@ -1,4 +1,9 @@
 #!/usr/bin/env python3
+"""
+This module contains a function `floor` that
+calculates the floor of a floating-point number.
+"""
+
 import math
 
 
