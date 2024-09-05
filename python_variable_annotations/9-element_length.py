@@ -1,6 +1,12 @@
 #!/usr/bin/env python3
 """
-This module contains a function to compute the length of elements in an iterable sequence.
+This module provides a function that takes an iterable of sequences 
+and returns a list of tuples. Each tuple contains a sequence and its 
+corresponding length.
+
+The function is useful for processing collections of sequences, such as 
+lists of strings or lists of lists, where determining the length of each 
+sequence is necessary.
 """
 
 from typing import Iterable, Sequence, List, Tuple
