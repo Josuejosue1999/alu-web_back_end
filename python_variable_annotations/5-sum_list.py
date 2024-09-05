@@ -1,4 +1,9 @@
 #!/usr/bin/env python3
+"""
+This module provides a function `sum_list` that calculates the sum of a
+list of floating-point numbers.
+"""
+
 from typing import List
 
 
