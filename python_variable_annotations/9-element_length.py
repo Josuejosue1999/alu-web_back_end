@@ -16,7 +16,7 @@ def element_length(lst: Iterable[Sequence]) -> List[Tuple[Sequence, int]]:
     """
     Returns a list of tuples,
     Args:
-        lst (Iterable[Sequence]):  
+        lst (Iterable[Sequence]):
     Returns:
         List[Tuple[Sequence, int]]:
     """
