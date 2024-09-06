@@ -10,9 +10,11 @@ import time
 import importlib.util
 import sys
 
-# Dynamically load the module
+# Define the module name and path
 module_name = '1-async_comprehension'
 module_path = f'./{module_name}.py'
+
+# Load the module dynamically
 spec = importlib.util.spec_from_file_location(module_name, module_path)
 async_comprehension_module = importlib.util.module_from_spec(spec)
 sys.modules[module_name] = async_comprehension_module
@@ -32,12 +34,8 @@ async def measure_runtime() -> float:
     start_time = time.time()  # Record the start time
 
     # Execute `async_comprehension` four times in parallel
-    await asyncio.gather(
-        async_comprehension(),
-        async_comprehension(),
-        async_comprehension(),
-        async_comprehension()
-    )
+    tasks = [async_comprehension() for _ in range(4)]
+    await asyncio.gather(*tasks)
 
     end_time = time.time()  # Record the end time
     total_time = end_time - start_time  # Calculate the total runtime
