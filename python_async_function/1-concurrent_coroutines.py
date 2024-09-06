@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
-This module contains an asynchronous function `wait_n` that spawns the 
-`wait_random` coroutine multiple times and returns the list of delays in ascending order.
+This module contains an asynchronous function `wait_n` that spawns the
+`wait_random` coroutine multiple times and returns
+the list of delays in ascending order.
 """
 
 import asyncio
@@ -15,11 +16,12 @@ wait_random = basic_async_syntax.wait_random
 
 async def wait_n(n: int, max_delay: int) -> List[float]:
     """
-    Asynchronously spawns `wait_random` n times with the specified max_delay
+    Asynchronously spawns `wait_random` n times with
+    the specified max_delay
     and returns a list of all the delays in ascending order without using sort().
     
     Args:
-        n (int): The number of times to spawn `wait_random`.
+    n (int): The number of times to spawn `wait_random`.
         max_delay (int): The maximum delay for `wait_random`.
     
     Returns:
