@@ -25,7 +25,6 @@ def measure_time(n: int, max_delay: int) -> float:
         float: The average time per execution of wait_n.
     """
     start_time = time.time()  # Start measuring time
-    # Execute the `wait_n` function using asyncio
     asyncio.run(wait_n(n, max_delay))
     end_time = time.time()  # End measuring time
     total_time = end_time - start_time  # Calculate total time
