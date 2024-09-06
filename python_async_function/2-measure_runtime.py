@@ -18,7 +18,8 @@ def measure_time(n: int, max_delay: int) -> float:
     Measure the total runtime of executing wait_n(n, max_delay)
     and return the average runtime per call.
     Args:
-        n (int): The number of times to spawn wait_random via wait_n.
+        n (int): The number of times to spawn wait_random
+        via wait_n.
         max_delay (int): The maximum delay for wait_random.
     Returns:
         float: The average time per execution of wait_n.
