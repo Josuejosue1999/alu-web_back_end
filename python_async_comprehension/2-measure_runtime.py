@@ -26,7 +26,8 @@ async_comprehension = async_comprehension_module.async_comprehension
 
 async def measure_runtime() -> float:
     """
-    Coroutine that measures the total runtime of executing `async_comprehension`
+    Coroutine that measures the total runtime of executing
+    `async_comprehension`
     four times in parallel using asyncio.gather.
     Returns:
         float: The total runtime for the four executions.
