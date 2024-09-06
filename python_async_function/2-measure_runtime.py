@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-This module contains a function `measure_time` that measures the
-execution time of the `wait_n` function and
+This module contains a function `measure_time`
+that measures the execution time of the `wait_n` function and
 returns the average time per call.
 """
 
