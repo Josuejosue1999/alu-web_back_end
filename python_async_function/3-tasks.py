@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-This module defines a function `task_wait_random` that creates
-an asyncio task for the wait_random coroutine.
+This module defines a function `task_wait_random`
+that creates an asyncio task for the wait_random coroutine.
 """
 
 import asyncio
