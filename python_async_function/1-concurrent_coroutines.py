@@ -6,7 +6,11 @@ This module contains an asynchronous function `wait_n` that spawns the
 
 import asyncio
 from typing import List
-from basic_async_syntax import wait_random  # Corrected import
+import importlib
+
+# Import the `wait_random` function from the `0-basic_async_syntax.py` module
+basic_async_syntax = importlib.import_module('0-basic_async_syntax')
+wait_random = basic_async_syntax.wait_random
 
 
 async def wait_n(n: int, max_delay: int) -> List[float]:
