@@ -6,8 +6,10 @@ that yields random numbers between 0 and 10, with a 1-second delay per yield.
 
 import asyncio
 import random
+from typing import AsyncGenerator
 
-async def async_generator():
+
+async def async_generator() -> AsyncGenerator[int, None]:
     """
     Asynchronous generator that yields a random number between 0 and 10
     every 1 second, for a total of 10 times.
