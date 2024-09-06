@@ -1,16 +1,23 @@
 #!/usr/bin/env python3
+"""
+This module contains an asynchronous coroutine
+`wait_random` that waits for a random
+delay between 0 and max_delay seconds and
+returns the actual delay time.
+"""
+
 import asyncio
 import random
 
 
 async def wait_random(max_delay: int = 10) -> float:
     """
-    Asynchronous coroutine that waits for a
-    random delay between 0 and max_delay
+    Asynchronous coroutine that waits for a random
+    delay between 0 and max_delay
     and returns the actual delay time.
     Args:
-        max_delay (int): The maximum delay
-        time (default is 10 seconds).
+        max_delay (int): The maximum delay time
+        (default is 10 seconds).
     Returns:
         float: The actual delay time.
     """
